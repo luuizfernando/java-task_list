@@ -1,19 +1,13 @@
 package entities;
 
 public class Task {
-    private Integer taskID;
     private String taskDescription;
     private Boolean isDone;
 
     public Task() {}
-    public Task(Integer taskID, String taskDescription, Boolean isDone) {
-        this.taskID = taskID;
+    public Task(String taskDescription, Boolean isDone) {
         this.taskDescription = taskDescription;
         this.isDone = isDone;
-    }
-
-    public Integer getTaskID() {
-        return taskID;
     }
 
     public String getTaskDescription() {
